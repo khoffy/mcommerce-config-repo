@@ -23,3 +23,9 @@ server:
 
 own-config:
   limitDeProduits: 4
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh

@@ -20,3 +20,6 @@ spring:
 
 server:
     port: 9001
+
+own-config:
+  limitDeProduits: 4

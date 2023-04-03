@@ -22,7 +22,7 @@ server:
     port: 9001
 
 own-config:
-  limitDeProduits: 4
+  limitDeProduits: 5
 
 management:
   endpoints:

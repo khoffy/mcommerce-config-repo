@@ -21,8 +21,18 @@ spring:
 server:
     port: 9002
 
+# Set the refresh endpoint for the config
+# To trigger the refresh of the properties, issue 
+# http://<config_server_ip_addr>:<port>/actuator/refresh      
 management:
   endpoints:
     web:
       exposure:
         include: refresh
+
+# Discovery server config
+# @EnableDiscoveryClient on the main class
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9102/eureka/

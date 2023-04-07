@@ -18,8 +18,8 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     database: postgresql
 
-server:
-    port: 9001
+#server:
+  #port: 9001
 
 own-config:
   limitDeProduits: 4

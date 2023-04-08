@@ -1,9 +1,6 @@
 spring:
   application:
     name: microservice-clientui
-  cloud:
-    config:
-      uri: http://localhost: 9101
 
 eureka:
   client:

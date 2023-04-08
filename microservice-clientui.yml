@@ -2,11 +2,13 @@ spring:
   application:
     name: microservice-clientui
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:9102/eureka/
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:9102/eureka/
 
 microservice-produits:
   ribbon:
     listOfServers: localhost:9001,localhost:9011
+
+

@@ -1,6 +1,10 @@
 spring:
   application:
     name: microservice-clientui
+  cloud:
+    loadbalancer:
+      ribbon:
+        enable: true
 
 #eureka:
 #  client:

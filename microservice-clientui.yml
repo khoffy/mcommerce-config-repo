@@ -1,21 +1,8 @@
 spring:
   application:
     name: microservice-clientui
-#  cloud:
-#    loadbalancer:
-#      ribbon:
-#        enable: true
 
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:9102/eureka/
-
-### Only for test purpose. Eureka and Ribbon work together
-### without  adding additional configuration. Ribbon doesn't need
-### the following config to find all instnces of microservice-produits
-#microservice-produits:
-#  ribbon:
-#    listOfServers: localhost:9001,localhost:9011
-
-

@@ -3,6 +3,9 @@ spring:
     name: gateway-server
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
       routes:
         - id: produits 
           uri: lb://MICROSERVICE-PRODUITS

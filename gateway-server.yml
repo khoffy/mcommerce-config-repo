@@ -1,6 +1,21 @@
 spring:
   application:
     name: gateway-server
+  cloud:
+    gateway:
+      routes:
+        - id: 
+          uri: lb://MICROSERVICE-PRODUITS
+          predicates:
+          - Path=/produits/**
+        - id:
+          uri: lb://MICROSERVICE-PAIEMENT
+          predicates:
+          - Path=/paiement/**
+        -id:
+          uri: lb://MICROSERVICE-COMMANDES
+          predicates:
+          - Path=/commandes/** 
 
 eureka:
   client:

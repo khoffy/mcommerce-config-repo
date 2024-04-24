@@ -1,7 +1,9 @@
 spring:
   application:
     name: microservice-clientui
-
+  cloud:
+    discovery:
+      enabled: true
 eureka:
   client:
     serviceUrl:

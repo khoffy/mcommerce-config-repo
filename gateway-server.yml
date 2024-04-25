@@ -8,10 +8,10 @@ spring:
           lowerCaseServiceId: true
           enabled: true
       routes:
-        - id: produits 
-          uri: lb://MICROSERVICE-PRODUITS
+        - id: products
+          uri: lb://MICROSERVICE-PRODUCTS
           predicates:
-          - Path=/produits/**
+          - Path=/products/**
         - id: paiement
           uri: lb://MICROSERVICE-PAIEMENT
           predicates:

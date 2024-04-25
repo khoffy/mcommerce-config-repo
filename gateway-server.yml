@@ -19,7 +19,11 @@ spring:
         - id: commandes
           uri: lb://MICROSERVICE-COMMANDES
           predicates:
-          - Path=/commandes/** 
+          - Path=/commandes/**
+        - id: shipping
+          uri: lb://MICROSERVICE-SHIPPING
+          predicates:
+            - Path=/shippings/**
   security:
     user:
       name: utilisateur

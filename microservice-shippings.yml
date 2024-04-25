@@ -1,6 +1,6 @@
 spring:
   application:
-    name: microservice-shipping
+    name: microservice-shippings
     
   datasource:
     database: microservice_shipping

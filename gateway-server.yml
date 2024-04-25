@@ -13,7 +13,7 @@ spring:
           predicates:
           - Path=/products/**
         - id: paiement
-          uri: lb://MICROSERVICE-PAIEMENT
+          uri: lb://MICROSERVICE-PAIEMENTS
           predicates:
           - Path=/paiement/**
         - id: commandes
@@ -21,7 +21,7 @@ spring:
           predicates:
           - Path=/commandes/**
         - id: shipping
-          uri: lb://MICROSERVICE-SHIPPING
+          uri: lb://MICROSERVICE-SHIPPINGS
           predicates:
             - Path=/shippings/**
   security:

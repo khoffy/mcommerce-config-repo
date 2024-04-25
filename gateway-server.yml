@@ -6,8 +6,7 @@ spring:
       discovery:
         locator:
           lowerCaseServiceId: true
-#          enabled: true
-
+          enabled: true
       routes:
         - id: produits 
           uri: lb://MICROSERVICE-PRODUITS

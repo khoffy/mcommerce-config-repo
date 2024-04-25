@@ -11,5 +11,5 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
 
-# server:
-#   port: 9102
+server:
+  port: 8761

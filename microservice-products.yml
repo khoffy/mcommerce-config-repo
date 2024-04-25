@@ -3,7 +3,7 @@ spring:
     name: microservice-products
     
   datasource:
-    database: microservice_products
+    database: microservice_produits
     hostname: ${POSTGRES_HOST:localhost}
     port: ${POSTGRES_PORT:5432}
     username: ${POSTGRES_USER:khoffy}

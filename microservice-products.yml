@@ -1,9 +1,9 @@
 spring:
   application:
-    name: microservice-produits
+    name: microservice-products
     
   datasource:
-    database: microservice_produits
+    database: microservice_products
     hostname: ${POSTGRES_HOST:localhost}
     port: ${POSTGRES_PORT:5432}
     username: ${POSTGRES_USER:khoffy}
@@ -27,7 +27,7 @@ spring:
   #port: 9001
 
 own-config:
-  limitDeProduits: 4
+  limitOfProducts: 4
 
 management:
   endpoints:

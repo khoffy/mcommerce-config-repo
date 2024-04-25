@@ -1,6 +1,10 @@
 spring:
   application:
     name: microservice-clientui
+  cloud:
+    discovery:
+      reactive:
+        enabled: false
 
 eureka:
   client:

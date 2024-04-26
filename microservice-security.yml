@@ -28,5 +28,9 @@ eureka:
   zipkin:
     baseUrl: http://localhost:9411
 
+rsa:
+  publicKey: classpath:certs/pub.pem
+  privateKey: classpath:certs/pri.pem
+  
 server:
   port: 8081

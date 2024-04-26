@@ -18,6 +18,9 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     database: postgresql
 
+  zipkin:
+    baseUrl: http://localhost:9411
+
 server:
     port: 9003
 

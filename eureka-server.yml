@@ -8,6 +8,9 @@ spring:
       import-check:
         enabled: false
 
+  zipkin:
+    baseUrl: http://localhost:9411
+
 eureka:
   instance:
     hostname: localhost

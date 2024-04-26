@@ -45,4 +45,4 @@ management:
             include: gateway
 
 server:
-  port: 9103
+  port: 9102

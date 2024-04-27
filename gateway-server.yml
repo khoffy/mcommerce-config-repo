@@ -12,8 +12,9 @@ spring:
           uri: lb://MICROSERVICE-PRODUCTS
           predicates:
           - Path=/products/**
-          filters:
-          - AddRequestHeader=Authorization, "Bearer {token}"
+          security:
+            oauth2:
+              authorization-header: Bearer {{jwtToken}}
         - id: paiement
           uri: lb://MICROSERVICE-PAIEMENTS
           predicates:

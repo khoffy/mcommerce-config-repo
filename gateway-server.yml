@@ -30,7 +30,7 @@ spring:
           uri: lb://MICROSERVICE-SECURITY
           predicates:
             - Path=/auth/**
-            
+
   security:
     user:
       name: utilisateur

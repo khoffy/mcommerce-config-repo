@@ -26,7 +26,7 @@ spring:
           uri: lb://MICROSERVICE-SHIPPINGS
           predicates:
             - Path=/shippings/**
-        - id: security1
+        - id: security
           uri: lb://MICROSERVICE-SECURITY
           predicates:
             - Path=/auth/**

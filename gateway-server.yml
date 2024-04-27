@@ -24,12 +24,16 @@ spring:
           uri: lb://MICROSERVICE-SHIPPINGS
           predicates:
             - Path=/shippings/**
-        - id: security
+        - id: security1
           uri: lb://MICROSERVICE-SECURITY
           predicates:
             - Path=/auth/**
           filters:
             - AddRequestHeader=Authorization, "Bearer {token}"
+        - id: security2
+          uri: lb://MICROSERVICE-SECURITY
+          predicates:
+            - Path=/token
   security:
     user:
       name: utilisateur

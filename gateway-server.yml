@@ -28,6 +28,8 @@ spring:
           uri: lb://MICROSERVICE-SECURITY
           predicates:
             - Path=/auth/**
+          filters:
+            - AddRequestHeader=Authorization, "Bearer {token}"
   security:
     user:
       name: utilisateur
